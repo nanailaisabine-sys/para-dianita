@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #1a1030;
+    background-image: linear-gradient(160deg, #1a1030, #5b2a55);
+    background-attachment: fixed;
+    color: white;
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: normal;
+    font-size: 2.8rem;
+    margin: 0 0 10px;
+}
+
+.subtitulo {
+    opacity: 0.85;
+}
+
+/* ---------- GIFs de la portada ---------- */
+.gifs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px 0 15px;
+}
+.gifs img {
+    height: 120px;
+    width: auto;
+    max-width: 45%;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+/* ---------- Cuenta regresiva ---------- */
+.contador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 15px 0 25px;
+}
+.unidad {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px;
+    min-width: 65px;
+}
+.unidad span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.unidad small {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+/* ---------- Barra de progreso ---------- */
+.progreso {
+    max-width: 400px;
+    margin: 0 auto 30px;
+}
+.barra {
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.relleno {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #ff9a9e, #fecfef);
+    border-radius: 10px;
+    transition: width 1.2s ease;
+}
+.texto-progreso {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin: 8px 0 0;
+}
+
+/* ---------- Mensaje del día ---------- */
+.mensaje-dia {
+    background-color: white;
+    color: #5b2a55;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+.mensaje-dia.cerrado {
+    cursor: pointer;
+    animation: respirar 1.6s ease-in-out infinite;
+}
+@keyframes respirar {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+}
+.etiqueta {
+    color: #d45d79;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0 0 10px;
+}
+.texto-mensaje {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+.escribiendo::after {
+    content: "|";
+    margin-left: 2px;
+    animation: parpadeo 0.8s step-end infinite;
+}
+@keyframes parpadeo {
+    50% { opacity: 0; }
+}
+
+/* ---------- Foto del día ---------- */
+.foto-mensaje {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 400px;
+    margin: 15px auto 0;
+    border-radius: 12px;
+    animation: aparecer 0.8s ease;
+}
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Botón para responder ---------- */
+.boton-responder {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 8px 22px;
+    border-radius: 20px;
+    background-color: #d45d79;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* ---------- Próximo mensaje ---------- */
+.proximo {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin: 0 0 25px;
+    min-height: 1.4em;
+}
+
+/* ---------- Botón del regalo (día 17) ---------- */
+.boton-regalo {
+    display: inline-block;
+    background-color: #ff9a9e;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 25px;
+    animation: latir 1.2s ease-in-out infinite;
+}
+@keyframes latir {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+}
+
+/* ---------- Calendario ---------- */
+h2 {
+    font-family: "Pacifico", cursive;
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+}
+.calendario {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 12px;
+}
+.dia {
+    position: relative;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 0.8rem;
+    cursor: pointer;
+    user-select: none;
+}
+.dia strong {
+    font-size: 1.3rem;
+}
+.dia.abierto {
+    background-color: #ff9a9e;
+}
+.dia.hoy {
+    box-shadow: 0 0 0 3px white;
+}
+.dia.seleccionado {
+    background-color: white;
+    color: #5b2a55;
+}
+.insignia {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ffd166;
+    color: #5b2a55;
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+/* ---------- Aviso de día bloqueado ---------- */
+.aviso {
+    min-height: 1.5em;
+    margin: 15px 0 0;
+    font-size: 0.95rem;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+.aviso.visible {
+    opacity: 1;
+}
+
+.nota {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+/* ---------- Utilidades (SIEMPRE AL FINAL) ---------- */
+.temblar {
+    animation: temblar 0.4s;
+}
+@keyframes temblar {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-8px); }
+    75% { transform: translateX(8px); }
+}
+.oculto {
+    display: none;
+}

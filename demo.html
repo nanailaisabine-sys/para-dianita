@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Dianita ♡</title>
+
+    <!-- Vista previa al compartir el link (WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Para Dianita ♡">
+    <meta property="og:description" content="17 días, 17 mensajes. Uno nuevo cada día hasta tu cumpleaños.">
+    <meta property="og:image" content="https://nanailaisabine-sys.github.io/para-dianita/vista-previa.jpg">
+    <meta property="og:url" content="https://nanailaisabine-sys.github.io/para-dianita/">
+
+    <!-- Ícono de la pestaña -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Para Dianita ♡</h1>
+
+        <!-- GIFs de la portada: puedes poner uno, dos o tres -->
+        <div class="gifs">
+            <img src="gift1.gif" alt="">
+        </div>
+
+        <p class="subtitulo" id="subtitulo">Faltan para tu cumpleaños:</p>
+
+        <div class="contador" id="contador">
+            <div class="unidad"><span id="dias">0</span><small>días</small></div>
+            <div class="unidad"><span id="horas">00</span><small>horas</small></div>
+            <div class="unidad"><span id="minutos">00</span><small>minutos</small></div>
+            <div class="unidad"><span id="segundos">00</span><small>segundos</small></div>
+        </div>
+
+        <div class="progreso">
+            <div class="barra"><div class="relleno" id="relleno"></div></div>
+            <p class="texto-progreso" id="texto-progreso"></p>
+        </div>
+
+        <section class="mensaje-dia" id="mensaje-dia">
+            <p class="etiqueta" id="etiqueta-dia"></p>
+            <p class="texto-mensaje" id="texto-mensaje"></p>
+            <img class="foto-mensaje oculto" id="foto-mensaje" alt="Foto del día">
+            <a class="boton-responder oculto" id="boton-responder" href="#" target="_blank">Responder ♡</a>
+        </section>
+
+        <p class="proximo" id="proximo"></p>
+
+        <a class="boton-regalo oculto" id="boton-regalo" href="#">Abrir mi regalo 🎁</a>
+
+        <h2>Nuestro calendario</h2>
+        <div class="calendario" id="calendario"></div>
+        <p class="aviso" id="aviso"></p>
+        <p class="nota">Cada día se desbloquea un mensaje nuevo</p>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
