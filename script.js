@@ -10,8 +10,7 @@ const TELEFONO = "525576700185";
 
 // Para probar: pon un número del 1 al 17 y verás ese día.
 // ANTES DE PUBLICAR DEBE QUEDAR EN null
-const DIA_SIMULADO = null;
-
+const DIA_SIMULADO = 17;
 
 // Un mensaje por día: el primero es el 1 de octubre, el último el 17
 const MENSAJES = [
