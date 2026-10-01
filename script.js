@@ -13,22 +13,23 @@ const TELEFONO = "525576700185";
 const DIA_SIMULADO = null;
 // Un mensaje por día: el primero es el 1 de octubre, el último el 17
 const MENSAJES = [
-    "Diana no sé en qué momento exacto pasaste de ser alguien que conocí a ser la persona en la que pienso al despertar y la última antes de dormir Solo sé que desde que llegaste, todo tiene más sentido: los días malos pesan menos, los buenos se sienten el doble, y hasta el silencio contigo se vuelve un lugar donde quiero quedarme Si alguna vez dudas de cuánto te amo, recuerda esto: de todas las cosas que la vida me ha dado, tú eres la única que jamás cambiaría por nada"
-    "Faltan dos semanas, y cada día me alegra más haberte conocido.",                                // 3 oct (faltan 14)
-    "Dicen que el 13 es de mala suerte, pero yo tengo la suerte de platicar contigo.",                // 4 oct (faltan 13)
-    "Hoy solo quiero recordarte que tu sonrisa me arregla el día, aunque no lo sepas.",              // 5 oct (faltan 12)
-    "Faltan 11 días y ya estoy pensando cómo sacarte una sonrisa ese día.",                           // 6 oct (faltan 11)
-    "Última vez en dos dígitos. Un día más cerca de celebrarte.",                                     // 7 oct (faltan 10)
-    "Si pudiera pedir un deseo por ti, sería que este año te trate tan bonito como tú tratas a los demás.", // 8 oct (faltan 9)
-    "Me gusta mucho cómo eres, y quería decírtelo hoy, sin ningún motivo.",                           // 9 oct (faltan 8)
-    "Una semana. Siete días para celebrar algo que yo celebro seguido: que existas.",                 // 10 oct (faltan 7)
-    "Faltan 6 días. Los ratos contigo son de mis favoritos.",                                         // 11 oct (faltan 6)
-    "¿Ya pensaste qué pastel quieres? Yo ya estoy pensando en verte.",                                // 12 oct (faltan 5)
-    "Tienes una forma de ser que hace todo más ligero.",                                              // 13 oct (faltan 4)
-    "Ojalá sepas lo bonito que es coincidir contigo.",                                                // 14 oct (faltan 3)
-    "Pasado mañana es tu día, y hoy solo quiero decirte que me encanta tenerte cerca.",               // 15 oct (faltan 2)
-    "Mañana es tu cumpleaños y quiero ser de los primeros en felicitarte 🎂",                         // 16 oct (falta 1)
-    "¡Hoy es tu cumpleaños! <3"                                                                       // 17 oct (¡HOY!)
+    "Diana no sé en qué momento exacto pasaste de ser alguien que conocí a ser la persona en la que pienso al despertar y la última antes de dormir Solo sé que desde que llegaste, todo tiene más sentido: los días malos pesan menos, los buenos se sienten el doble, y hasta el silencio contigo se vuelve un lugar donde quiero quedarme Si alguna vez dudas de cuánto te amo, recuerda esto: de todas las cosas que la vida me ha dado, tú eres la única que jamás cambiaría por nada",
+    "Hay días en los que no sé cómo explicar lo que siento por ti, pero sí sé que cuando estás cerca todo se acomoda. Eres mi lugar favorito, mi calma en los días difíciles y la razón de muchas de mis sonrisas. Gracias por llegar a mi vida, Diana.",
+    "Faltan dos semanas, y cada día me alegra más haberte conocido. A veces me pongo a pensar en todas las vueltas que dio la vida para que coincidiéramos, y no puedo evitar sonreír, porque llegaste justo cuando más falta me hacías.",   // 3 oct (faltan 14)
+    "Dicen que el 13 es de mala suerte, pero yo no les creo, porque tengo la suerte de platicar contigo, de escucharte reír y de saber que estás ahí. Si eso es mala suerte, entonces no quiero que se me quite nunca.",                     // 4 oct (faltan 13)
+    "Hoy solo quiero recordarte que tu sonrisa me arregla el día, aunque no lo sepas. No importa qué tan pesado haya estado todo, basta con pensar en ti para que las cosas se sientan más ligeras y bonitas.",                             // 5 oct (faltan 12)
+    "Faltan 11 días y ya estoy pensando cómo sacarte una sonrisa ese día. Quiero que sea especial, que te sientas querida desde que abras los ojos hasta que te duermas, porque eso es justo lo que mereces.",                              // 6 oct (faltan 11)
+    "Última vez en dos dígitos. Un día más cerca de celebrarte. Y aunque cuento los días para tu cumpleaños, la verdad es que cada día contigo ya se siente como algo que vale la pena celebrar.",                                          // 7 oct (faltan 10)
+    "Si pudiera pedir un deseo por ti, sería que este año te trate tan bonito como tú tratas a los demás. Que te llene de cosas buenas, de risas y de momentos que te hagan sentir tan especial como eres para mí.",                       // 8 oct (faltan 9)
+    "Me gusta mucho cómo eres, y quería decírtelo hoy, sin ningún motivo. Me gusta tu forma de pensar, de hablar, de ver las cosas, y hasta tus detallitos que tal vez ni notas. Todo eso te hace única para mí.",                         // 9 oct (faltan 8)
+    "Una semana. Siete días para celebrar algo que yo celebro seguido: que existas. Porque desde que estás en mi vida, todo tiene un poquito más de color, y eso es algo que agradezco todos los días.",                                    // 10 oct (faltan 7)
+    "Faltan 6 días. Los ratos contigo son de mis favoritos, de esos que quisiera guardar para siempre. No importa si hacemos algo grande o simplemente platicamos, contigo el tiempo se pasa volando y siempre me deja con ganas de más.",  // 11 oct (faltan 6)
+    "¿Ya pensaste qué pastel quieres? Yo ya estoy pensando en verte. Porque más allá del pastel, los regalos o la fiesta, lo que más espero de ese día es estar contigo y ver lo feliz que te pones.",                                     // 12 oct (faltan 5)
+    "Tienes una forma de ser que hace todo más ligero. Contigo los problemas parecen más pequeños, las risas más grandes y los días normales se vuelven de esos que dan gusto recordar. Gracias por ser así.",                              // 13 oct (faltan 4)
+    "Ojalá sepas lo bonito que es coincidir contigo. Hay millones de personas en el mundo y de alguna forma terminé conociéndote a ti. Cada vez que lo pienso, me doy cuenta de lo afortunado que soy.",                                   // 14 oct (faltan 3)
+    "Pasado mañana es tu día, y hoy solo quiero decirte que me encanta tenerte cerca. Tu compañía es de las cosas más bonitas que tengo, y quiero que sepas que, pase lo que pase, aquí voy a estar para ti.",                             // 15 oct (faltan 2)
+    "Mañana es tu cumpleaños y quiero ser de los primeros en felicitarte 🎂 Solo falta una noche para celebrar el día en que llegó al mundo una de las personas más especiales que conozco. Duerme bonito, que mañana es todo tuyo.",       // 16 oct (falta 1)
+    "¡Hoy es tu cumpleaños! <3 Feliz cumpleaños, Diana. Gracias por existir, por tu sonrisa, por tu forma de ser y por dejarme formar parte de tu vida. Ojalá este nuevo año te traiga todo lo que sueñas, y que yo pueda estar ahí para verlo."  // 17 oct                                                     // 17 oct (¡HOY!)
 ];
 
 // Una foto o GIF por día, en el mismo orden que los mensajes.
