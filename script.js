@@ -13,8 +13,7 @@ const TELEFONO = "525576700185";
 const DIA_SIMULADO = null;
 // Un mensaje por día: el primero es el 1 de octubre, el último el 17
 const MENSAJES = [
-    "Faltan 16 días para tu cumpleaños y yo ya empecé a contarlos como si fuera el mío.",           // 1 oct (faltan 16)
-    "Dicen que las cuentas regresivas son para cosas importantes… por eso hice una para ti.",       // 2 oct (faltan 15)
+    "Diana no sé en qué momento exacto pasaste de ser alguien que conocí a ser la persona en la que pienso al despertar y la última antes de dormir Solo sé que desde que llegaste, todo tiene más sentido: los días malos pesan menos, los buenos se sienten el doble, y hasta el silencio contigo se vuelve un lugar donde quiero quedarme Si alguna vez dudas de cuánto te amo, recuerda esto: de todas las cosas que la vida me ha dado, tú eres la única que jamás cambiaría por nada"
     "Faltan dos semanas, y cada día me alegra más haberte conocido.",                                // 3 oct (faltan 14)
     "Dicen que el 13 es de mala suerte, pero yo tengo la suerte de platicar contigo.",                // 4 oct (faltan 13)
     "Hoy solo quiero recordarte que tu sonrisa me arregla el día, aunque no lo sepas.",              // 5 oct (faltan 12)
