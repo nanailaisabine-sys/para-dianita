@@ -3,7 +3,7 @@ const INICIO = new Date("2026-10-01T00:00:00");
 const CUMPLE = new Date("2026-10-17T00:00:00");
 
 // Link de la página principal (lo pones cuando esté publicada)
-const LINK_REGALO = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExanUxdTJrdGpjMXY1MGVuNzY0c3VlamtqYTA4M3g5OTZsamd6ejNjOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Z9jh7tAeMzrjMGxAfQ/giphy.gif";
+const LINK_REGALO = "felizcumpleaosdianita.netlify.app";
 
 // Tu número de WhatsApp: 52 + tus 10 dígitos, sin espacios ni signos
 const TELEFONO = "525576700185";
